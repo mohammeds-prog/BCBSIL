@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UGgyow5mzk2q0rgo3W1w5Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="c4a1727e-bb73-48d2-9be2-d2308e759b7b" CvType="AnyWordGroup" DesignTimeRectangle="1565, 818, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl class='form-control-static' css-selector='body&amp;gt;ui-view&amp;gt;ui-view&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;insurance-info&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;p' idx='5' parentid='insuranceInfoSection' tag='P' /&gt;" Guid="112886d9-2214-4efb-8ff4-c62f0d72eaf7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c4a1727e-bb73-48d2-9be2-d2308e759b7b" CvTextArea="1489, 828, 47, 14" CvTextArgument="Payer ID:" CvType="Text" DesignTimeRectangle="1386, 818, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Payer ID:' parentid='insuranceInfoSection' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Payer ID:' /&gt;" Guid="f15a006d-e8a9-4acf-8e11-96ca353d16e2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fd5192f7d1276430d0700ae00458d266.png" xmlns="">0P4rbvjupUkS72pzmtDo8hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

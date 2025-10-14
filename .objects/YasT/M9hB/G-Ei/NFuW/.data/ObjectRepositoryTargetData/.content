@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HZ49NNkX7UO3osrvuRS8Wg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.dnoaconnect.com/#!/benefits/f89f753fd8f3a98a65946a70958bd39a8f1ce7a30e69b0e4eca751755ae276bf?subscriberId=822503165&amp;dateOfBirth=1994-12-10" DesignTimeRectangle="285, 508, 1350, 540" DesignTimeScaleFactor="1.5" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl class='modal-body' tag='DIV' /&gt;" Guid="63b9abba-07ba-4fc6-b6f5-b23b5170c3e7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a5945294bfd25f548cb91c2e8b915520.png" xmlns="">0FXQBcxnrxk-MxKC1Dzi7uw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

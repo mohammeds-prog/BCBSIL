@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Fm9mh8vrw0u01mCapSpzog" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" DesignTimeRectangle="1115, 819, 108, 36" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='procedureCode' tag='INPUT' type='' class='form-control ng-dirty ng-touched ng-valid-parse ng-empty ng-invalid ng-invalid-required' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7ce299a9-0b1b-45d5-9796-37bcfdf5813e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a682f777-5da9-4925-9cdb-1a885680597c" CvTextArea="998, 829, 88, 12" CvTextArgument="Procedure Code:" CvType="Text" DesignTimeRectangle="855, 819, 245, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='procedure-lookup' tag='LABEL' type='' class='col-sm-6 control-label' aaname='Procedure Code:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Procedure Code:' /&gt;" Guid="59c4aa50-fb1d-4a48-bb08-d9d4f7e5a4af" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="aa02c1ce5b28d222a191fbe837655d4d.png" xmlns="">0DIdyWU4ma0WiiV8fYE6WtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

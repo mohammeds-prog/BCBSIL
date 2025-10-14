@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6adyJtpBfk6OUGbMbBdW7g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="d4e40b73-347d-440f-9a25-880a511ef5ea" CvType="AnyWordGroup" DesignTimeRectangle="1136, 776, 198, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='6' tag='TD' /&gt;" Guid="134ce037-02e4-43e3-a078-7a51a8cadd98" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1136, 539, 198, 57" FuzzySelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aaname='In NetworkFamily' type='' tag='TH' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='In Network&amp;#xA;Family' /&gt;" Guid="07cc57ed-8237-49ff-ab61-233338f88955" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="996b3e52c6c0de3f6c3eecf094626b65.png" xmlns="">0HUqMUtewOkK_WKcJBskvIA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

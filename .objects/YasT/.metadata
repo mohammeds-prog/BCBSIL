@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome DNoA Connect",
+  "Type": "App",
+  "Id": "YasTHJ3XREeU4eTKfDAlAQ",
+  "Reference": "krLO0qrnME6dMk1yC2L_mw/YasTHJ3XREeU4eTKfDAlAQ",
+  "Created": "2025-07-01T19:41:29.697041Z",
+  "Updated": "2025-07-01T19:41:29.697041Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

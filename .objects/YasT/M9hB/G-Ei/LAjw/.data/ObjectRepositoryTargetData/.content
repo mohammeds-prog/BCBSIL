@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PZirFe3b5EWhf1VYlX--kw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="c835a6c4-4e4b-4fd9-b571-bf7e1ae92da0" CvType="AnyWordGroup" DesignTimeRectangle="1565, 373, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' parentid='eligibilityInfoSection' tag='P' /&gt;" Guid="7c78eb95-9adf-4970-8ab4-e784053046a7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c835a6c4-4e4b-4fd9-b571-bf7e1ae92da0" CvTextArea="1490, 383, 45, 12" CvTextArgument="Enrolled:" CvType="Text" DesignTimeRectangle="1386, 373, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Enrolled:' parentid='eligibilityInfoSection' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Enrolled:' /&gt;" Guid="477afcf8-9416-44fb-acd5-bc576c00af64" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="73c08fa41a5c357e11ef6d8a8845cee8.png" xmlns="">0PqJvwaZIYUmKFAY3uE2HnA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

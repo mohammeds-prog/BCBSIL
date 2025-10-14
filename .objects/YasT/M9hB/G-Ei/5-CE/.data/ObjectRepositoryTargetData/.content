@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="83NSE2dbLUCr2OdlG9rTRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="8d166be9-5507-4f83-991f-ff7c0999a9e9" CvElementArea="1241, 461, 106, 45" CvTextArea="1271, 476, 46, 12" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="1243, 463, 103, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="140e5ea5-608c-43b4-adc2-cab6891a0a35" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="986224d86672334078a37900b1aec26a.png" xmlns="">01c-LWqZfUkeIGxXWTSdz9A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

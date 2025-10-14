@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HVFn8HGuCESHXfcRrXbtyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="93de4d07-589c-45c5-b3e9-d4eaeefa63be" CvType="AnyWordGroup" DesignTimeRectangle="1565, 716, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' parentid='insuranceInfoSection' tag='P' /&gt;" Guid="8af6054d-d2e5-411c-a406-83a569cb4db7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="93de4d07-589c-45c5-b3e9-d4eaeefa63be" CvTextArea="1466, 726, 69, 14" CvTextArgument="Group Name:" CvType="Text" DesignTimeRectangle="1386, 716, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Group Name:' parentid='insuranceInfoSection' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Group Name:' /&gt;" Guid="d7f288e2-d6ac-4729-8baa-09eb838fc388" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5bdb756236141d59ae869705ccadd4ef.png" xmlns="">0ULx0meoNH0K40X8N-KvA0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

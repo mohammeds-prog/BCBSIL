@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rDalNKPXnUWTAqn5ykvFXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="4ec89e08-b981-423e-aee9-24c4f076444a" CvType="AnyWordGroup" DesignTimeRectangle="1565, 716, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' parentid='insuranceInfoSection' tag='P' /&gt;" Guid="925e41e6-4cfa-4af9-bc98-fe682375fe02" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c77f63f54bcb1b0b8f836561d751b028.png" xmlns="">0egcQIqNXVEWoMFS-6qerfQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

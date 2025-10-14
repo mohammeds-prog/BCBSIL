@@ -1,0 +1,1068 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>Microsoft.Office.Interop.Word</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.Semantic.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.SWEntities.fd11650972760.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>Microsoft.Office.Interop.Word</AssemblyReference>
+      <AssemblyReference>fd11650972760.ZBkqOyym3C1xG09z1myic32</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1269,13082" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="effectiveId" />
+      <Variable x:TypeArguments="x:String" Name="memberId" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ExtraInfo" />
+      <Variable x:TypeArguments="x:String" Name="famDed" />
+      <Variable x:TypeArguments="x:String" Name="PayorId" />
+      <Variable x:TypeArguments="x:String" Name="MTC" />
+      <Variable x:TypeArguments="x:String" Name="COB" />
+      <Variable x:TypeArguments="x:String" Name="annualDeductible" />
+      <Variable x:TypeArguments="x:String" Name="annualRem" />
+      <Variable x:TypeArguments="x:String" Name="annualMax" />
+      <Variable x:TypeArguments="x:String" Name="groupNumber" />
+      <Variable x:TypeArguments="x:String" Name="groupName" />
+      <Variable x:TypeArguments="x:String" Name="final_name" />
+      <Variable x:TypeArguments="x:String" Name="memberDOB" />
+      <Variable x:TypeArguments="x:String" Name="memberName" />
+      <Variable x:TypeArguments="x:String" Name="Final_1351" />
+      <Variable x:TypeArguments="x:String" Name="D1351_TR" />
+      <Variable x:TypeArguments="x:String" Name="D1351AGE" />
+      <Variable x:TypeArguments="x:String" Name="D1208AGElimit" />
+      <Variable x:TypeArguments="x:String" Name="freqShareInfoForD0120" />
+      <Variable x:TypeArguments="x:String" Name="matchedLine" />
+      <Variable x:TypeArguments="x:String" Name="codesBlock" />
+      <Variable x:TypeArguments="x:String" Name="freqShareInfo" />
+      <Variable x:TypeArguments="x:String" Name="count" />
+      <Variable x:TypeArguments="str:Match" Name="match" />
+      <Variable x:TypeArguments="x:String" Name="finalFrequency" />
+      <Variable x:TypeArguments="x:Object" Name="frequencyObject" />
+      <Variable x:TypeArguments="x:String" Name="percentageInfo" />
+      <Variable x:TypeArguments="x:String" Name="frequencyInfo" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="codeToCellMap" />
+      <Variable x:TypeArguments="sd:DataTable" Name="outputTable" />
+      <Variable x:TypeArguments="x:String" Name="benefitInfo" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="codeList" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="freqCheckCodes" />
+      <Variable x:TypeArguments="x:String" Name="freqShareInfoForD0140" />
+      <Variable x:TypeArguments="x:String" Name="freqShareInfoForD4346" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome DNoA Connect" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,13059" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="09070c90-5955-4058-8dd3-9ded148c0689" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="562,12818" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="528,116" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(x:String)">[codeList]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(x:String)" xml:space="preserve">[New List(Of String) From {
+"D0120", "D0140", "D0220", "D0274", "D0210", "D0367", "D1110", "D1208", "D1351", "D1352", "D2393","D2644","D2740", "D2950", "D2954", "D2920", "D2980", "D3120", "D3220", "D4211", "D4212", "D4249", "D4266", "D4341", "D4346", "D4355", "D4381", "D4910","D5410", "D5740", "D6010", "D6057", "D6058", "D6930", "D7140", "D7210", "D7220","D7880", "D7953", "D7961", "D7962", "D9110", "D9222", "D9230", "D9310", "D9944"
+}]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="528,2900" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[codeList]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,2769" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  procedureCode'" EmptyField="True" sap:VirtualizedContainerService.HintSize="492,188" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[currentText]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bd65b7ae-b008-4756-b452-4c4f9072e446" InformativeScreenshot="55f04e635e68ea6b3cc5be7388cf1e21" Selector="&lt;webctrl id='procedureCode' tag='INPUT' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="8d166be9-5507-4f83-991f-ff7c0999a9e9" ContentHash="83NSE2dbLUCr2OdlG9rTRQ" CvElementArea="1241, 461, 106, 45" CvTextArea="1271, 476, 46, 12" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="1243, 463, 103, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="140e5ea5-608c-43b4-adc2-cab6891a0a35" InformativeScreenshot="986224d86672334078a37900b1aec26a.png" Reference="krLO0qrnME6dMk1yC2L_mw/5-CEkQKIhE2H5Ne7WalvGg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,383" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                      <ui:RetryScope.ActivityBody>
+                        <ActivityAction>
+                          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:RetryScope.ActivityBody>
+                      <ui:RetryScope.Condition>
+                        <ActivityFunc x:TypeArguments="x:Boolean" />
+                      </ui:RetryScope.Condition>
+                    </ui:RetryScope>
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Periodic Oral Evaluatio…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,190" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[frequencyInfo]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="dnoaconnect.com" ContentHash="2_Y-XcSzO0GS8sV25wpDDg" DesignTimeRectangle="285, 508, 1350, 540" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl class='modal-body' tag='DIV' type='' aaname='    ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="00e999b9-4282-4cc0-8add-1e6ce3c684d2" InformativeScreenshot="eac536dc4b4be734eeb967fe427a1111.png" Reference="krLO0qrnME6dMk1yC2L_mw/UlGS3utDIEulUxg9xJPvBg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="492,115" sap2010:WorkflowViewState.IdRef="Assign_10">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[count]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(frequencyInfo.ToLower.Replace("once", "1").Replace("twice", "2").Replace("thrice", "3"), "(\d+)\s*(times)?\s*per").Groups(1).Value]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="492,116" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[finalFrequency]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(
+  String.IsNullOrWhiteSpace(frequencyInfo) OrElse count = "",
+  "NO FREQ",
+  If(
+    Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth") AndAlso Regex.IsMatch(frequencyInfo, "(?i)per\s*lifetime"),
+    count &amp; "/TH/LT",
+    If(
+      Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth") AndAlso Regex.IsMatch(frequencyInfo, "(?i)per\s*\d+\s*months?"),
+      count &amp; "/TH/" &amp; Regex.Match(frequencyInfo, "(?i)per\s*(\d+)\s*months?").Groups(1).Value &amp; " MTS",
+      If(
+        Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth"),
+        count &amp; "/TH",
+        If(
+          Regex.IsMatch(frequencyInfo, "(?i)per\s*lifetime"),
+          count &amp; "/LT",
+          If(
+            Regex.IsMatch(frequencyInfo, "(?i)per\s*(benefit\s*period|benefit\s*year|calendar\s*year|year|cy)"),
+            count &amp; "/CY",
+            If(
+              Regex.IsMatch(frequencyInfo, "(?i)per\s*\d+\s*months?"),
+              count &amp; "/" &amp; Regex.Match(frequencyInfo, "(?i)per\s*(\d+)\s*months?").Groups(1).Value &amp; " MTS",
+              If(
+                Regex.IsMatch(frequencyInfo, "(?i)per\s*days?"),
+                count &amp; "/DAYS",
+                "NO FREQ"
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[{&quot;D0120&quot;, &quot;D0140&quot;, &quot;D4346&quot;}.Contains(currentText)]" sap:VirtualizedContainerService.HintSize="492,510" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,281" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="sharedCodes" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_16">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[sharedCodes]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[String.Join(", ", System.Text.RegularExpressions.Regex.Matches(frequencyInfo, "D\d{4}").Cast(Of System.Text.RegularExpressions.Match)().Select(Function(m) m.Value).Where(Function(code) code &lt;&gt; currentText).Distinct().ToArray())]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_12">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[freqShareInfo]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[If(String.IsNullOrEmpty(sharedCodes), "NO", "YES WITH " &amp; sharedCodes)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '100%'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,190" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[percentageInfo]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="6446c308-fb6e-4d78-8f2b-1cc478a0343c" ContentHash="dM6Dl_BEjUq6sXQ7nqsrkw" CvType="AnyWordGroup" DesignTimeRectangle="1401, 544, 188, 26" FullSelectorArgument="&lt;webctrl parentid='outOfPocketCosts' tag='DD' /&gt;" Guid="aeb13500-ae55-44b4-92e4-dd7c5d271700" InformativeScreenshot="20f72ec96b7f509bd48fb322bee2d82e.png" Reference="krLO0qrnME6dMk1yC2L_mw/Vlsaq47yrUyUoAqdRQ_nhQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="492,139" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b0429236-8b21-4f1a-a0d8-20837e60c6e3" InformativeScreenshot="dcb1d5546ed791a03ac24e6263949a52" Selector="&lt;webctrl tag='BUTTON' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <Assign sap:VirtualizedContainerService.HintSize="492,115" sap2010:WorkflowViewState.IdRef="Assign_11">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="scg:List(x:String)">[freqCheckCodes]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String) From {"D0120", "D0140", "D4346"}]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="492,116" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[benefitInfo]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(finalFrequency = "NO FREQ" AndAlso percentageInfo.Trim = "0%", 
+    "NOT COVERED", 
+    finalFrequency &amp; " " &amp; percentageInfo.Trim &amp; 
+    If({"D0120", "D0140", "D4346"}.Contains(currentText), " , " &amp; freqShareInfo, "") &amp; 
+    If({"D4212", "D4249", "D4266", "D7953", "D9110", "D9310", "D9944","D4381"}.Contains(currentText), " , PRE-D RECOMMENDED", "")
+)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="492,116" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[codeToCellMap]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" xml:space="preserve">[New Dictionary(Of String, String) From {
+    {"D0120", "E3"},
+    {"D0140", "E4"},
+	{"D0220", "E5"},
+	{"D0274", "E6"},
+	{"D0210", "E7"},
+	{"D0367", "E8"},
+	{"D1110", "E9"},
+	{"D1208", "E10"},
+	{"D1351", "E12"},
+	{"D1352", "E14"},
+	{"D2393", "E16"},
+	{"D2644", "E17"},
+	{"D2740", "E18"},
+	{"D2950", "E20"},
+	{"D2954", "E21"},
+	{"D2920", "E22"},
+	{"D2980", "E23"},
+	{"D3120", "E24"},
+	{"D3220", "E25"},
+	{"D4211", "E26"},
+	{"D4212", "E27"},
+	{"D4249", "E28"},
+	{"D4266", "E29"},
+	{"D4341", "E30"},
+	{"D4346", "E33"},
+	{"D4355", "E34"},
+	{"D4381", "E35"},
+	{"D4910", "E36"},
+	{"D5410", "E40"},
+	{"D5740", "E41"},
+	{"D6010", "E42"},
+	{"D6057", "E43"},
+	{"D6058", "E44"},
+	{"D6930", "E45"},
+	{"D7140", "E46"},
+	{"D7210", "E47"},
+	{"D7220", "E48"},
+	{"D7880", "E50"},
+	{"D7953", "E51"},
+	{"D7961", "E52"},
+	{"D7962", "E53"},
+	{"D9110", "E54"},
+	{"D9222", "E55"},
+	{"D9230", "E56"},
+	{"D9310", "E57"},
+	{"D9944", "E58"}
+}]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="492,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+                      <ui:ExcelApplicationScope.Body>
+                        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExcelWriteCell Cell="[codeToCellMap(currentText)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Sheet1" Text="[benefitInfo]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ExcelApplicationScope.Body>
+                    </ui:ExcelApplicationScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Procedure Code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Text="D1208" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="1d07f188-f1f3-40be-b5d2-589a071d715d" ContentHash="vWPQliaDpk-jEyAtSDIWRQ" CvElementArea="1113, 826, 112, 29" CvType="InputBox" DesignTimeRectangle="1115, 819, 108, 36" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='procedureCode' tag='INPUT' type='' class='form-control ng-dirty ng-touched ng-empty ng-invalid ng-invalid-required' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="59280c94-9a4b-4d3e-8af4-8d5d293a07f0" InformativeScreenshot="0b9d775b989fb644764fa168bbb7d851.png" IsResponsive="True" Reference="krLO0qrnME6dMk1yC2L_mw/0UZO6q9igkKAWi84WqfPWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1d07f188-f1f3-40be-b5d2-589a071d715d" CvTextArea="998, 829, 88, 12" CvTextArgument="Procedure Code:" CvType="Text" DesignTimeRectangle="855, 819, 245, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='procedure-lookup' tag='LABEL' type='' class='col-sm-6 control-label' aaname='Procedure Code:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Procedure Code:' /&gt;" Guid="8fe91e23-cba7-4bd7-b6f1-4b0f94998d1d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="6d40d81d-116e-4813-8b65-0dcbacb31005" ContentHash="-zF2ZzOBrECTAeSXAFSCyw" CvElementArea="1241, 867, 106, 45" CvTextArea="1271, 882, 46, 12" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="1243, 869, 103, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="f7e72b76-8f29-48a9-874e-985eb07ea881" InformativeScreenshot="7e20c010ea622af87a31e66c610a6820.png" Reference="krLO0qrnME6dMk1yC2L_mw/onVOGYxEzESUInVV7-m-TQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Up to Age 19(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[D1208AGElimit]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="750e022e-a3f6-40f8-8637-da7a23caf829" ContentHash="sgRKjTMELk6xgssqpyV8OQ" CvType="AnyWordGroup" DesignTimeRectangle="557, 538, 255, 17" FullSelectorArgument="&lt;webctrl idx='3' parentid='limitations' tag='DT' /&gt;" Guid="ecf8b4c7-0e3c-4c6f-b8e5-98e3fdcfc46b" InformativeScreenshot="c7210326e74381177e3d204e6a26b5d9.png" Reference="krLO0qrnME6dMk1yC2L_mw/5IxE9xwfPUGBjgtn1fpe8Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="9c7e3759-059e-4b4e-8330-9f44925b9c06" ContentHash="zLjTwWCfp0qHt80BnctZFg" CvElementArea="1340, 932, 72, 44" CvTextArea="1356, 947, 39, 12" CvTextArgument="CLOSE" CvType="Button" DesignTimeRectangle="1342, 934, 68, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="9a7be450-b482-4b26-9b53-81e18862a8de" InformativeScreenshot="6bde85623fd6945aed18b0b87ff2ba3c.png" Reference="krLO0qrnME6dMk1yC2L_mw/Ge4Q1--zEUy4P8c9uQuU6w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="E11" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Sheet1" Text="[D1208AGElimit]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Procedure Code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Text="D1351" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" ContentHash="Fm9mh8vrw0u01mCapSpzog" DesignTimeRectangle="1115, 819, 108, 36" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='procedureCode' tag='INPUT' type='' class='form-control ng-dirty ng-touched ng-valid-parse ng-empty ng-invalid ng-invalid-required' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7ce299a9-0b1b-45d5-9796-37bcfdf5813e" InformativeScreenshot="aa02c1ce5b28d222a191fbe837655d4d.png" IsResponsive="True" Reference="krLO0qrnME6dMk1yC2L_mw/ihiuaPJr_UGSL1EznXUAcw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="a682f777-5da9-4925-9cdb-1a885680597c" CvTextArea="998, 829, 88, 12" CvTextArgument="Procedure Code:" CvType="Text" DesignTimeRectangle="855, 819, 245, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='procedure-lookup' tag='LABEL' type='' class='col-sm-6 control-label' aaname='Procedure Code:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Procedure Code:' /&gt;" Guid="59c4aa50-fb1d-4a48-bb08-d9d4f7e5a4af" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="0205dbb9-2820-4fc2-be5a-e75feeede152" ContentHash="UzmDP8iL1UmYNHkGmiF1gg" CvElementArea="1241, 867, 106, 45" CvTextArea="1271, 882, 46, 12" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="1243, 869, 103, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="cb5cc249-5981-4153-b970-3607a6ef9136" InformativeScreenshot="8380f2737ec18e06a20f833c9d30fbd2.png" Reference="krLO0qrnME6dMk1yC2L_mw/nBkVFflIAkG55iVX-C6RSQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Up to Age 19(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[D1351AGE]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="486a05a3-ab48-44f1-afc2-351645d1d5cb" ContentHash="0Hls7YSBl06pHh37KMN9UQ" CvType="AnyWordGroup" DesignTimeRectangle="557, 538, 255, 17" FullSelectorArgument="&lt;webctrl idx='3' parentid='limitations' tag='DT' /&gt;" Guid="a6777d3b-f173-47b1-8ebb-dbcb329fc12a" InformativeScreenshot="e8a11f186e1a484f6644158d366f5ac9.png" Reference="krLO0qrnME6dMk1yC2L_mw/T4PHiiDV10O2klwUkexCFg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Limited to teeth 02, 03…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[D1351_TR]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" ContentHash="E2a_JifQDEii17TOKQFEBQ" DesignTimeRectangle="832, 555, 126, 34" FullSelectorArgument="&lt;webctrl idx='3' isleaf='1' parentid='limitations' tag='DD' /&gt;" Guid="65460068-9b0e-4811-b027-5e77eb77f51a" InformativeScreenshot="da73c4f554b7cb827a71dc5ef8588196.png" Reference="krLO0qrnME6dMk1yC2L_mw/5ONPzeYQp0Svxg4IzOaA3w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="528,115" sap2010:WorkflowViewState.IdRef="Assign_17">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Final_1351]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[D1351AGE &amp; ", " &amp; D1351_TR]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="E13" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1" Text="[Final_1351]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,227" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="87a60bd8-a714-46d1-be7a-a932675a15df" ContentHash="uLACA3SLQk-MUdw-WxG23A" CvElementArea="1340, 911, 72, 44" CvTextArea="1356, 926, 39, 12" CvTextArgument="CLOSE" CvType="Button" DesignTimeRectangle="1342, 913, 68, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="fe3a1627-3180-4034-bf77-f8f3c4f4a87e" InformativeScreenshot="23c5c609b0b6ce5bf36cc64a3dabb026.png" Reference="krLO0qrnME6dMk1yC2L_mw/4m1P65lXvEWSdZdgjAtrAA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Member Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[memberName]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="0ba06d80-bc13-4c2f-8d6a-f64b6ea621d1" ContentHash="85R3VsroJkaP0M_xR6z7GA" CvType="AnyWordGroup" DesignTimeRectangle="502, 373, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' parentid='memberInfoSection' tag='P' /&gt;" Guid="d834ae2a-aede-49f5-8c45-a48609ecfc1c" InformativeScreenshot="54592adcf336a3dff7106bc3d79c2282.png" Reference="krLO0qrnME6dMk1yC2L_mw/YrVSnYpED0GYEgdMWZlaqQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0ba06d80-bc13-4c2f-8d6a-f64b6ea621d1" CvTextArea="390, 383, 82, 12" CvTextArgument="Member Name:" CvType="Text" DesignTimeRectangle="323, 373, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Member Name:' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Member Name:' /&gt;" Guid="60d11929-b08b-43ed-9dcf-7db0920199a1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Date of Birth'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[memberDOB]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="4ec89e08-b981-423e-aee9-24c4f076444a" ContentHash="JGAVWgZR3U65zqtXYQWMMQ" CvType="AnyWordGroup" DesignTimeRectangle="502, 417, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' parentid='memberInfoSection' tag='P' /&gt;" Guid="a434c1e2-d6c9-4712-83c9-218ac10ab197" InformativeScreenshot="e6d29796743e4422b07908b88466e85c.png" Reference="krLO0qrnME6dMk1yC2L_mw/gd5YVNfVTkmN33lF9ceN5w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="4ec89e08-b981-423e-aee9-24c4f076444a" CvTextArea="403, 427, 69, 12" CvTextArgument="Date of Birth:" CvType="Text" DesignTimeRectangle="323, 417, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date of Birth:' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Date of Birth:' /&gt;" Guid="74e70618-72da-41eb-ab8c-af44cecfe478" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="528,115" sap2010:WorkflowViewState.IdRef="Assign_18">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[final_name]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[memberName &amp; ", " &amp; memberDOB]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B5" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="[final_name]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NGetText DisplayName="Get Text 'Group Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[groupName]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="93de4d07-589c-45c5-b3e9-d4eaeefa63be" ContentHash="HVFn8HGuCESHXfcRrXbtyA" CvType="AnyWordGroup" DesignTimeRectangle="1565, 716, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' parentid='insuranceInfoSection' tag='P' /&gt;" Guid="8af6054d-d2e5-411c-a406-83a569cb4db7" InformativeScreenshot="5bdb756236141d59ae869705ccadd4ef.png" Reference="krLO0qrnME6dMk1yC2L_mw/PuRK25DHu02QDHmSyyyZbA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="93de4d07-589c-45c5-b3e9-d4eaeefa63be" CvTextArea="1466, 726, 69, 14" CvTextArgument="Group Name:" CvType="Text" DesignTimeRectangle="1386, 716, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Group Name:' parentid='insuranceInfoSection' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Group Name:' /&gt;" Guid="d7f288e2-d6ac-4729-8baa-09eb838fc388" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Group Number'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[groupNumber]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="bc43f6ab-945a-4563-8eb0-75f68691a9b6" ContentHash="i0ascXG3rEOfz1hKSW_EbQ" CvType="AnyWordGroup" DesignTimeRectangle="1565, 672, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' parentid='insuranceInfoSection' tag='P' /&gt;" Guid="36fc4fa2-b126-49d0-bae9-707a739a5c10" InformativeScreenshot="8157820d8fe114a50af4b7b159fc7e01.png" Reference="krLO0qrnME6dMk1yC2L_mw/wLROPxDuYkavSfQHkX5Leg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bc43f6ab-945a-4563-8eb0-75f68691a9b6" CvTextArea="1455, 682, 80, 14" CvTextArgument="Group Number:" CvType="Text" DesignTimeRectangle="1386, 672, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Group Number:' parentid='insuranceInfoSection' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Group Number:' /&gt;" Guid="2cff8dba-4296-43a0-9229-556a0c20292f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B14" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Sheet1" Text="[groupName]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B15" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Sheet1" Text="[&quot;'&quot; &amp; groupNumber]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NGetText DisplayName="Get Text 'Maximums - Benefit Peri…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[annualMax]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="3e910cc5-9cd8-4aed-b4b9-1ffcda6cea30" ContentHash="8y5vlyVDTkSjaEIDHcG-3g" CvType="AnyWordGroup" DesignTimeRectangle="938, 496, 198, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" Guid="bd603521-8e22-46a9-88ed-884ca2139874" InformativeScreenshot="8695cc0733c29289fb85d138c11781e9.png" Reference="krLO0qrnME6dMk1yC2L_mw/OVIOk8a5p0a7ngD8ZggZvg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3e910cc5-9cd8-4aed-b4b9-1ffcda6cea30" CvTextArea="345, 509, 167, 14" CvTextArgument="Maximums - Benefit Period" CvType="Text" DesignTimeRectangle="338, 496, 600, 45" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Maximums - Benefit Period' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Maximums - Benefit Period' /&gt;" Guid="cbd897e0-9be8-4668-abf9-cff209db9e86" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Maximums - Benefit Peri…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[annualRem]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="c4b41234-53fb-4b68-b9b8-93c1c3fd0618" ContentHash="wcAZiPHNj06Vx05m7xw6-w" CvType="AnyWordGroup" DesignTimeRectangle="938, 541, 198, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='3' tag='TD' /&gt;" Guid="03f7cc86-d059-4f9a-bfac-ab81274c19e0" InformativeScreenshot="9bc41181c23d96aca9248911d6dcbbc3.png" Reference="krLO0qrnME6dMk1yC2L_mw/zEnfovZ0ZEC-_EEyTJaUQw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c4b41234-53fb-4b68-b9b8-93c1c3fd0618" CvTextArea="345, 554, 235, 17" CvTextArgument="Maximums - Benefit Period Remaining" CvType="Text" DesignTimeRectangle="338, 541, 600, 45" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Maximums - Benefit Period Remaining' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Maximums - Benefit Period Remaining' /&gt;" Guid="4a376733-c732-4436-8ace-1e9e3cf5b255" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Deductible - Benefit Pe…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[annualDeductible]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="509a2f0c-3f08-4eb5-a328-693821fa0c3c" ContentHash="9kCgfXDHsUaHoS_QYfGsKg" CvType="AnyWordGroup" DesignTimeRectangle="938, 676, 198, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='6' tag='TD' /&gt;" Guid="bfcce84e-08a4-4833-9bec-5ae5cc52ba24" InformativeScreenshot="d18ab46db646cc0baf54a4429158ebf8.png" Reference="krLO0qrnME6dMk1yC2L_mw/XSXm28HkTkiO9bCUJGXiPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="509a2f0c-3f08-4eb5-a328-693821fa0c3c" CvTextArea="345, 689, 162, 14" CvTextArgument="Deductible - Benefit Period" CvType="Text" DesignTimeRectangle="338, 676, 600, 45" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Deductible - Benefit Period' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Deductible - Benefit Period' /&gt;" Guid="e9aa2107-a106-4ad9-b115-2c6439400e58" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_7" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B16" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_7" SheetName="Sheet1" Text="[annualMax]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_8" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B17" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_8" SheetName="Sheet1" Text="[annualRem]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_9" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B18" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_9" SheetName="Sheet1" Text="[annualDeductible]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NGetText DisplayName="Get Text 'Coordination Of Benefits'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[COB]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="bad54cbf-a5d7-41cf-939c-8c5fd6786fab" ContentHash="vtV705SSU020XYpcxwHHwQ" CvType="AnyWordGroup" DesignTimeRectangle="584, 660, 216, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' parentid='groupInfoSection' tag='P' /&gt;" Guid="0ac080b3-0ea5-42e6-9514-c711aa43725c" InformativeScreenshot="8617912db6d61a9452906e3f25e37ff1.png" Reference="krLO0qrnME6dMk1yC2L_mw/JaWQwKZf0keW4OGAkm63gA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bad54cbf-a5d7-41cf-939c-8c5fd6786fab" CvTextArea="423, 670, 131, 12" CvTextArgument="Coordination Of Benefits:" CvType="Text" DesignTimeRectangle="323, 660, 246, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Coordination Of Benefits:' parentid='groupInfoSection' tag='LABEL' type='' class='col-sm-6 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Coordination Of Benefits:' /&gt;" Guid="9c13782b-898d-4425-8740-ccfd1af9dc2f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Missing Tooth Provision'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_20" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[MTC]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="db4ce435-6a95-47cd-a009-c4eab7048ec9" ContentHash="WOSrJ4JfxEKWhiKnaLossQ" CvType="AnyWordGroup" DesignTimeRectangle="584, 616, 216, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' parentid='groupInfoSection' tag='P' /&gt;" Guid="f61cf3d1-13a3-418f-8f50-56926be467c9" InformativeScreenshot="30952128a84ce8c386fa0828f9ae0f20.png" Reference="krLO0qrnME6dMk1yC2L_mw/KQ334UWpMUS54l_HML-IeQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="db4ce435-6a95-47cd-a009-c4eab7048ec9" CvTextArea="426, 626, 128, 14" CvTextArgument="Missing Tooth Provision:" CvType="Text" DesignTimeRectangle="323, 616, 246, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Missing Tooth Provision:' parentid='groupInfoSection' tag='LABEL' type='' class='col-sm-6 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Missing Tooth Provision:' /&gt;" Guid="b8cd4310-4282-4d22-a03d-6d8f40418618" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_10" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B33" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_10" SheetName="Sheet1" Text="[MTC]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_11" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B37" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_11" SheetName="Sheet1" Text="[COB]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NGetText DisplayName="Get Text 'Payer ID'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_21" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[PayorId]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="c4a1727e-bb73-48d2-9be2-d2308e759b7b" ContentHash="UGgyow5mzk2q0rgo3W1w5Q" CvType="AnyWordGroup" DesignTimeRectangle="1565, 818, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl class='form-control-static' css-selector='body&amp;gt;ui-view&amp;gt;ui-view&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;insurance-info&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;p' idx='5' parentid='insuranceInfoSection' tag='P' /&gt;" Guid="112886d9-2214-4efb-8ff4-c62f0d72eaf7" InformativeScreenshot="fd5192f7d1276430d0700ae00458d266.png" Reference="krLO0qrnME6dMk1yC2L_mw/84x2PN0u1E-FYsC5wB-ubw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c4a1727e-bb73-48d2-9be2-d2308e759b7b" CvTextArea="1489, 828, 47, 14" CvTextArgument="Payer ID:" CvType="Text" DesignTimeRectangle="1386, 818, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Payer ID:' parentid='insuranceInfoSection' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Payer ID:' /&gt;" Guid="f15a006d-e8a9-4acf-8e11-96ca353d16e2" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_12" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B11" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_12" SheetName="Sheet1" Text="[&quot;'&quot; &amp; PayorId]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NGetText DisplayName="Get Text 'Subscriber ID'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[memberId]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="034dfd57-f5d3-411c-9fec-ab3abd1aca66" ContentHash="vJxHq_0qJkyrGnrusGawFw" CvType="AnyWordGroup" DesignTimeRectangle="502, 461, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' parentid='memberInfoSection' tag='P' /&gt;" Guid="68350627-4a1b-431d-8302-4ac8b5701949" InformativeScreenshot="a14b492057f4f1928846440b477a0c30.png" Reference="krLO0qrnME6dMk1yC2L_mw/JFeDXEUs40C1EkrV5G0xVw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="034dfd57-f5d3-411c-9fec-ab3abd1aca66" CvTextArea="398, 471, 74, 12" CvTextArgument="Subscriber ID:" CvType="Text" DesignTimeRectangle="323, 461, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Subscriber ID:' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Subscriber ID:' /&gt;" Guid="a9f58c7f-871b-4a2b-84ee-a52f7a8aacdb" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Enrolled'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[effectiveId]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="c835a6c4-4e4b-4fd9-b571-bf7e1ae92da0" ContentHash="PZirFe3b5EWhf1VYlX--kw" CvType="AnyWordGroup" DesignTimeRectangle="1565, 373, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' parentid='eligibilityInfoSection' tag='P' /&gt;" Guid="7c78eb95-9adf-4970-8ab4-e784053046a7" InformativeScreenshot="73c08fa41a5c357e11ef6d8a8845cee8.png" Reference="krLO0qrnME6dMk1yC2L_mw/LAjwJoDz2kmBwNHayJ98NA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c835a6c4-4e4b-4fd9-b571-bf7e1ae92da0" CvTextArea="1490, 383, 45, 12" CvTextArgument="Enrolled:" CvType="Text" DesignTimeRectangle="1386, 373, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Enrolled:' parentid='eligibilityInfoSection' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Enrolled:' /&gt;" Guid="477afcf8-9416-44fb-acd5-bc576c00af64" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_15" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B7" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_15" SheetName="Sheet1" Text="[&quot;'&quot; &amp; memberId]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_16" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B12" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_16" SheetName="Sheet1" Text="[&quot;'&quot; &amp; effectiveId]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <uix:NGetText DisplayName="Get Text 'In NetworkFamily'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,190" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[famDed]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="d4e40b73-347d-440f-9a25-880a511ef5ea" ContentHash="6adyJtpBfk6OUGbMbBdW7g" CvType="AnyWordGroup" DesignTimeRectangle="1136, 776, 198, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='6' tag='TD' /&gt;" Guid="134ce037-02e4-43e3-a078-7a51a8cadd98" InformativeScreenshot="996b3e52c6c0de3f6c3eecf094626b65.png" Reference="krLO0qrnME6dMk1yC2L_mw/UEfMceGQkUW9LJM7T9Pt_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1136, 539, 198, 57" FuzzySelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aaname='In NetworkFamily' type='' tag='TH' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='In Network&amp;#xA;Family' /&gt;" Guid="07cc57ed-8237-49ff-ab61-233338f88955" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="528,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_13" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="B20" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_13" SheetName="Sheet1" Text="[famDed]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <Assign sap:VirtualizedContainerService.HintSize="528,116" sap2010:WorkflowViewState.IdRef="Assign_19">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[ExtraInfo]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" xml:space="preserve">[New Dictionary(Of String, String) From {
+  {"B34", "SEAT DATE"},
+  {"B10", "12 MTS"},
+  {"B21", "26 YEARS"},
+  {"E19", "PRE-D RECOMMENDED"},
+  {"E49", "ONLY D7230, D7240 &amp; D7241 TO MEDICAL"},
+  {"E31", "YES"},
+  {"E32", "YES W/D4341"},
+  {"E37", "PRE-D RECOMMENDED"},
+  {"E38", "PRE-D RECOMMENDED"},
+  {"B22", "DNOA"},
+  {"B8", "BCBS of IL, 800-972-7565"},
+  {"B9", "'PO Box 660247 Dallas, TX 75266-0247"}
+}]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each currentKeyValuePairOfTextAndText" sap:VirtualizedContainerService.HintSize="528,488" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[ExtraInfo]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="currentKeyValuePairOfTextAndText" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,364" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_14" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\Sharath\Downloads\NEW FULL BOB TEMPLATE (1).xlsx">
+                      <ui:ExcelApplicationScope.Body>
+                        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExcelWriteCell Cell="[currentKeyValuePairOfTextAndText.Key]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_14" SheetName="Sheet1" Text="[currentKeyValuePairOfTextAndText.Value]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ExcelApplicationScope.Body>
+                    </ui:ExcelApplicationScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Chrome" ContentHash="5DUvt1whcEOuQGphdlYruQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACfUlEQVRIS7VWq66jUBS9qp/AH/AJ/EFlZRM8eAwKUdUiCQkJBoFAIEkwKNIEQx0hiDpCHak6hgR5ZiZrZl+G09tHSpsl6AnsdfZz7a/VZvcMZM1ZWyEgqbb4wk/4Eo8IsuaYQVY0Hee8bvui6QA2jGwY09NZdxPxqxluE8iaE+UVG0YvLddWKL4gqbbuJiDbx0fxBcINgn18xGfPhELWnKLpLlfGOS+aTvzkPwJJtYumq9te1hzRFsEMsiivtoeYTvi/n+juN4Gk2nXbR3klWpxBMXyKjxlkq80OeeKc4+9tgiivnrE+hWL45PHaCreHmA3j1LNvAjPI6rYXIziFl5a49eXKoryiMJpBxoZRMfzVZre2QjaMUzt/CCTVpjeegaw5KAQvLWFLdxM2jKD00nIaib8EM7+egaTa6elMfu/jY9F0dF3y70aZvoQor+q2x3PRdGi9fXz00hKH7xLALnptbYWXK0MM8bAMAYoHBVq3PXJJDwsQpKczmgDBgTdRXiFcCxBsDzGmIaKEVBPTAgRTu2g9FO5HCJDzDxJ8KkRmkKHwt4c4PZ3Rz4slGWHBLPDSclavCxBQf602u8uVyZojaw4bRpy8SwAV0d0EE5ASQPPuLQJJtaEiuDLnXHeTF4bd9hDfEXTF8EkBFcNHM6M65+P6J5Cgm0FGaoHZjp2DBBIzVXcTxfCn139AACiGDy3DHS9Xho0IMjBVBQRntiw9JrgDCBl0Tdacuu3FkL5AQKsj1hYsd9hTIMXiSvEaAa2O6FIEmnbAn0T3AQF8F89RY7Re3llHHhCgS9kwFk2Xns7INhJeNJ0ZZHdMAw8IAEm1KQFrK3x+wflN8Av0p4Vl8uJCSQAAAABJRU5ErkJggg==" InformativeScreenshot="686a3c0ce295f423608f840afc32a6d9.jpg" Reference="krLO0qrnME6dMk1yC2L_mw/G-Eii3Zrq0iBA6x1QMOP7w" Selector="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" Url="https://www.dnoaconnect.com/#!/benefits/a17f100ec9d5f647f7b3db133a91cb8fae434e3cb9a50b43b05d867f4ea95adc?subscriberId=845670400&amp;dateOfBirth=1957-12-18" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
