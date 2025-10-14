@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vJxHq_0qJkyrGnrusGawFw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="034dfd57-f5d3-411c-9fec-ab3abd1aca66" CvType="AnyWordGroup" DesignTimeRectangle="502, 461, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' parentid='memberInfoSection' tag='P' /&gt;" Guid="68350627-4a1b-431d-8302-4ac8b5701949" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="034dfd57-f5d3-411c-9fec-ab3abd1aca66" CvTextArea="398, 471, 74, 12" CvTextArgument="Subscriber ID:" CvType="Text" DesignTimeRectangle="323, 461, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Subscriber ID:' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Subscriber ID:' /&gt;" Guid="a9f58c7f-871b-4a2b-84ee-a52f7a8aacdb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a14b492057f4f1928846440b477a0c30.png" xmlns="">0cVo7cACS_E6DO53qgYPl_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

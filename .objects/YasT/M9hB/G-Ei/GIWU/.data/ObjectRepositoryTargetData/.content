@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="thCVm0_GBEyLmyl18SXJxQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="1665c638-cf31-46a9-9c2d-ca2dc0fdb980" CvElementArea="1112, 620, 113, 29" CvType="InputBox" DesignTimeRectangle="1115, 665, 108, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='procedureCode' tag='INPUT' /&gt;" Guid="ac1a3388-a343-496c-ab73-d2103c2a851c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="20121799b396f024f055050745f830fb.png" xmlns="">02Hz1bRd2Okim_JID-hMgZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

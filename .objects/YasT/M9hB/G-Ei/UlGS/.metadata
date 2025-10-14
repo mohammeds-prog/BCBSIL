@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Periodic Oral Evaluatio…",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "UlGS3utDIEulUxg9xJPvBg",
+  "Reference": "krLO0qrnME6dMk1yC2L_mw/UlGS3utDIEulUxg9xJPvBg",
+  "ParentRef": "krLO0qrnME6dMk1yC2L_mw/G-Eii3Zrq0iBA6x1QMOP7w",
+  "Created": "2025-07-07T10:32:25.1379642Z",
+  "Updated": "2025-07-07T10:32:25.1379642Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

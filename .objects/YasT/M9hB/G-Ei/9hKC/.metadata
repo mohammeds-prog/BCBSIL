@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Once per tooth per 36 m…",
+  "Type": "Element",
+  "Id": "9hKC98GAnE6twoAKPMfJJQ",
+  "Reference": "krLO0qrnME6dMk1yC2L_mw/9hKC98GAnE6twoAKPMfJJQ",
+  "ParentRef": "krLO0qrnME6dMk1yC2L_mw/G-Eii3Zrq0iBA6x1QMOP7w",
+  "Created": "2025-07-06T10:15:29.3549507Z",
+  "Updated": "2025-07-06T10:15:29.3549507Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

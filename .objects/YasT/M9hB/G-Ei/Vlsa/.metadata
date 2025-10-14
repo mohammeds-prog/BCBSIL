@@ -1,0 +1,13 @@
+﻿{
+  "Name": "100%",
+  "Type": "Element",
+  "Id": "Vlsaq47yrUyUoAqdRQ_nhQ",
+  "Reference": "krLO0qrnME6dMk1yC2L_mw/Vlsaq47yrUyUoAqdRQ_nhQ",
+  "ParentRef": "krLO0qrnME6dMk1yC2L_mw/G-Eii3Zrq0iBA6x1QMOP7w",
+  "Created": "2025-07-06T10:15:46.9601632Z",
+  "Updated": "2025-07-06T10:15:46.9601632Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

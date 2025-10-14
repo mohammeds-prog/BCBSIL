@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wcAZiPHNj06Vx05m7xw6-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="c4b41234-53fb-4b68-b9b8-93c1c3fd0618" CvType="AnyWordGroup" DesignTimeRectangle="938, 541, 198, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='3' tag='TD' /&gt;" Guid="03f7cc86-d059-4f9a-bfac-ab81274c19e0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c4b41234-53fb-4b68-b9b8-93c1c3fd0618" CvTextArea="345, 554, 235, 17" CvTextArgument="Maximums - Benefit Period Remaining" CvType="Text" DesignTimeRectangle="338, 541, 600, 45" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Maximums - Benefit Period Remaining' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Maximums - Benefit Period Remaining' /&gt;" Guid="4a376733-c732-4436-8ace-1e9e3cf5b255" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9bc41181c23d96aca9248911d6dcbbc3.png" xmlns="">0KvfeyonlakWPmSpPJgYUcQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

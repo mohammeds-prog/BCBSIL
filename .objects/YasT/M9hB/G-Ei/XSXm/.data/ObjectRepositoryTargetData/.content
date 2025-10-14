@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9kCgfXDHsUaHoS_QYfGsKg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="509a2f0c-3f08-4eb5-a328-693821fa0c3c" CvType="AnyWordGroup" DesignTimeRectangle="938, 676, 198, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='6' tag='TD' /&gt;" Guid="bfcce84e-08a4-4833-9bec-5ae5cc52ba24" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="509a2f0c-3f08-4eb5-a328-693821fa0c3c" CvTextArea="345, 689, 162, 14" CvTextArgument="Deductible - Benefit Period" CvType="Text" DesignTimeRectangle="338, 676, 600, 45" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='planInfoSection' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Deductible - Benefit Period' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Deductible - Benefit Period' /&gt;" Guid="e9aa2107-a106-4ad9-b115-2c6439400e58" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d18ab46db646cc0baf54a4429158ebf8.png" xmlns="">0Ix2EPbrdvUKb3ShGnalRvQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vtV705SSU020XYpcxwHHwQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="bad54cbf-a5d7-41cf-939c-8c5fd6786fab" CvType="AnyWordGroup" DesignTimeRectangle="584, 660, 216, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' parentid='groupInfoSection' tag='P' /&gt;" Guid="0ac080b3-0ea5-42e6-9514-c711aa43725c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bad54cbf-a5d7-41cf-939c-8c5fd6786fab" CvTextArea="423, 670, 131, 12" CvTextArgument="Coordination Of Benefits:" CvType="Text" DesignTimeRectangle="323, 660, 246, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Coordination Of Benefits:' parentid='groupInfoSection' tag='LABEL' type='' class='col-sm-6 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Coordination Of Benefits:' /&gt;" Guid="9c13782b-898d-4425-8740-ccfd1af9dc2f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8617912db6d61a9452906e3f25e37ff1.png" xmlns="">0k1Sf8U0DJkGHZVYRNoMUtw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JGAVWgZR3U65zqtXYQWMMQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="4ec89e08-b981-423e-aee9-24c4f076444a" CvType="AnyWordGroup" DesignTimeRectangle="502, 417, 298, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' parentid='memberInfoSection' tag='P' /&gt;" Guid="a434c1e2-d6c9-4712-83c9-218ac10ab197" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4ec89e08-b981-423e-aee9-24c4f076444a" CvTextArea="403, 427, 69, 12" CvTextArgument="Date of Birth:" CvType="Text" DesignTimeRectangle="323, 417, 164, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date of Birth:' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Date of Birth:' /&gt;" Guid="74e70618-72da-41eb-ab8c-af44cecfe478" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e6d29796743e4422b07908b88466e85c.png" xmlns="">03tufUGCxQEKeQzk716YXNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

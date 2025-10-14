@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vWPQliaDpk-jEyAtSDIWRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="1d07f188-f1f3-40be-b5d2-589a071d715d" CvElementArea="1113, 826, 112, 29" CvType="InputBox" DesignTimeRectangle="1115, 819, 108, 36" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='procedureCode' tag='INPUT' type='' class='form-control ng-dirty ng-touched ng-empty ng-invalid ng-invalid-required' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="59280c94-9a4b-4d3e-8af4-8d5d293a07f0" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1d07f188-f1f3-40be-b5d2-589a071d715d" CvTextArea="998, 829, 88, 12" CvTextArgument="Procedure Code:" CvType="Text" DesignTimeRectangle="855, 819, 245, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='procedure-lookup' tag='LABEL' type='' class='col-sm-6 control-label' aaname='Procedure Code:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Procedure Code:' /&gt;" Guid="8fe91e23-cba7-4bd7-b6f1-4b0f94998d1d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0b9d775b989fb644764fa168bbb7d851.png" xmlns="">08732MWz4YkWlHQ26e3aSeg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
