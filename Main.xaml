@@ -152,7 +152,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1293,9476" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1293,10062" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="infoTable" />
       <Variable x:TypeArguments="x:String" Name="downloadspath" />
@@ -199,13 +199,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome DNoA Connect" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,9453" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="09070c90-5955-4058-8dd3-9ded148c0689" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome DNoA Connect" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,10039" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="09070c90-5955-4058-8dd3-9ded148c0689" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="562,9212" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="562,9798" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -238,13 +238,13 @@
               </Assign.Value>
             </Assign>
             <ui:BuildDataTable DataTable="[infoTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="528,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Procedure_x0020_Code&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Frequency_x0020_and_x0020_Percentage&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="528,2692" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[codeList]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="528,3278" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[codeList]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,2561" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,3147" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -294,7 +294,27 @@
                         <ActivityFunc x:TypeArguments="x:Boolean" />
                       </ui:RetryScope.Condition>
                     </ui:RetryScope>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Periodic Oral Evaluatio…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,190" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[frequencyInfo]" Version="V5">
+                    <Assign sap:VirtualizedContainerService.HintSize="492,115" sap2010:WorkflowViewState.IdRef="Assign_28">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[frequencyInfo]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="492,115" sap2010:WorkflowViewState.IdRef="Assign_29">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[percentageInfo]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Periodic Oral Evaluatio…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,190" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[frequencyInfo]" Timeout="1" Version="V5">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="dnoaconnect.com" ContentHash="2_Y-XcSzO0GS8sV25wpDDg" DesignTimeRectangle="285, 508, 1350, 540" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl class='modal-body' tag='DIV' type='' aaname='    ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="00e999b9-4282-4cc0-8add-1e6ce3c684d2" InformativeScreenshot="eac536dc4b4be734eeb967fe427a1111.png" Reference="krLO0qrnME6dMk1yC2L_mw/UlGS3utDIEulUxg9xJPvBg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                       </uix:NGetText.Target>
@@ -316,27 +336,35 @@
   String.IsNullOrWhiteSpace(frequencyInfo) OrElse count = "",
   "NO FREQ",
   If(
-    Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth") AndAlso Regex.IsMatch(frequencyInfo, "(?i)per\s*lifetime"),
-    count &amp; "/TH/LT",
+    Regex.IsMatch(frequencyInfo, "(?i)(twice|\b\d+\b(\s*times?)?)\s*per\s*tooth\s*per\s*(benefit\s*period|benefit\s*year|calendar\s*year|year|cy)"),
     If(
-      Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth") AndAlso Regex.IsMatch(frequencyInfo, "(?i)per\s*\d+\s*months?"),
-      count &amp; "/TH/" &amp; Regex.Match(frequencyInfo, "(?i)per\s*(\d+)\s*months?").Groups(1).Value &amp; " MTS",
+      Regex.IsMatch(frequencyInfo, "(?i)twice"),
+      "2/TH/CY",
+      Regex.Match(frequencyInfo, "(?i)(\d+)\s*(times?)?\s*per\s*tooth\s*per\s*(benefit\s*period|benefit\s*year|calendar\s*year|year|cy)").Groups(1).Value &amp; "/TH/CY"
+    ),
+    If(
+      Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth") AndAlso Regex.IsMatch(frequencyInfo, "(?i)per\s*lifetime"),
+      count &amp; "/TH/LT",
       If(
-        Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth"),
-        count &amp; "/TH",
+        Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth") AndAlso Regex.IsMatch(frequencyInfo, "(?i)per\s*\d+\s*months?"),
+        count &amp; "/TH/" &amp; Regex.Match(frequencyInfo, "(?i)per\s*(\d+)\s*months?").Groups(1).Value &amp; " MTS",
         If(
-          Regex.IsMatch(frequencyInfo, "(?i)per\s*lifetime"),
-          count &amp; "/LT",
+          Regex.IsMatch(frequencyInfo, "(?i)per\s*tooth"),
+          count &amp; "/TH",
           If(
-            Regex.IsMatch(frequencyInfo, "(?i)per\s*(benefit\s*period|benefit\s*year|calendar\s*year|year|cy)"),
-            count &amp; "/CY",
+            Regex.IsMatch(frequencyInfo, "(?i)per\s*lifetime"),
+            count &amp; "/LT",
             If(
-              Regex.IsMatch(frequencyInfo, "(?i)per\s*\d+\s*months?"),
-              count &amp; "/" &amp; Regex.Match(frequencyInfo, "(?i)per\s*(\d+)\s*months?").Groups(1).Value &amp; " MTS",
+              Regex.IsMatch(frequencyInfo, "(?i)per\s*(benefit\s*period|benefit\s*year|calendar\s*year|year|cy)"),
+              count &amp; "/CY",
               If(
-                Regex.IsMatch(frequencyInfo, "(?i)per\s*days?"),
-                count &amp; "/DAYS",
-                "NO FREQ"
+                Regex.IsMatch(frequencyInfo, "(?i)per\s*\d+\s*months?"),
+                count &amp; "/" &amp; Regex.Match(frequencyInfo, "(?i)per\s*(\d+)\s*months?").Groups(1).Value &amp; " MTS",
+                If(
+                  Regex.IsMatch(frequencyInfo, "(?i)per\s*days?"),
+                  count &amp; "/DAYS",
+                  "NO FREQ"
+                )
               )
             )
           )
@@ -386,7 +414,7 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '100%'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,190" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[percentageInfo]" Version="V5">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '100%'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,190" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" TextString="[percentageInfo]" Timeout="1" Version="V5">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="6446c308-fb6e-4d78-8f2b-1cc478a0343c" ContentHash="dM6Dl_BEjUq6sXQ7nqsrkw" CvType="AnyWordGroup" DesignTimeRectangle="1401, 544, 188, 26" FullSelectorArgument="&lt;webctrl parentid='outOfPocketCosts' tag='DD' /&gt;" Guid="aeb13500-ae55-44b4-92e4-dd7c5d271700" InformativeScreenshot="20f72ec96b7f509bd48fb322bee2d82e.png" Reference="krLO0qrnME6dMk1yC2L_mw/Vlsaq47yrUyUoAqdRQ_nhQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                       </uix:NGetText.Target>
@@ -421,19 +449,47 @@
                         <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String) From {"D0120", "D0140", "D4346"}]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="492,116" sap2010:WorkflowViewState.IdRef="Assign_2">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[benefitInfo]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(finalFrequency = "NO FREQ" AndAlso percentageInfo.Trim = "0%", 
+                    <If Condition="[String.IsNullOrWhiteSpace(frequencyInfo) and String.IsNullOrWhiteSpace(percentageInfo)]" sap:VirtualizedContainerService.HintSize="492,472" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_25">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[benefitInfo]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">NO INFO ON WEB</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,167" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[benefitInfo]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(finalFrequency = "NO FREQ" AndAlso percentageInfo.Trim = "0%", 
     "NOT COVERED", 
     finalFrequency &amp; " " &amp; percentageInfo.Trim &amp; 
     If({"D0120", "D0140", "D4346"}.Contains(currentText), " , " &amp; freqShareInfo, "") &amp; 
     If({"D4212", "D4249", "D4266", "D7953", "D9110", "D9310", "D9944","D4381"}.Contains(currentText), " , PRE-D RECOMMENDED", "")
 )]</InArgument>
-                      </Assign.Value>
-                    </Assign>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
                     <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{currentText, benefitInfo}]" DataTable="[infoTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="492,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                   </Sequence>
                 </ActivityAction>
@@ -849,7 +905,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_14" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[templatepath]">
+                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_14" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[downloadspath]">
                       <ui:ExcelApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                           <ActivityAction.Argument>
