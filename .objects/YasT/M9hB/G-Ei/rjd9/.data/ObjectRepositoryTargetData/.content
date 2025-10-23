@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SGfG9Up1UUy28L0Ik9H4Xw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="92fdf472-8fea-4bee-b998-d5320adc63ca" CvElementArea="438, 416, 401, 36" CvType="InputBox" DesignTimeRectangle="440, 417, 398, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='dateOfBirth' tag='INPUT' type='text' class='form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-valid-date ng-valid-date-range' placeholder='mm/dd/yyyy' aaname='Date of Birth' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b41e4d1e-080c-4010-bb62-154c44dd32b9" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="92fdf472-8fea-4bee-b998-d5320adc63ca" CvTextArea="319, 427, 91, 13" CvTextArgument="Date of Birth *" CvType="Text" DesignTimeRectangle="161, 417, 264, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date of Birth' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Date of Birth' /&gt;" Guid="4d9436fe-06b2-4c01-8a90-5f7a0c51bae1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f3af79a6c2c90ef6a990d441134b0b97.png" xmlns="">095K_GFlP0km-TMhacYbjHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

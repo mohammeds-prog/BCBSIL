@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="j9dNDSvv4U2Od_z6f9ToDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="16e679ac-1811-4e17-9eef-65cc9eb3e2e8" CvElementArea="437, 366, 402, 37" CvType="InputBox" DesignTimeRectangle="440, 368, 398, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='subscriberId' tag='INPUT' type='text' class='form-control ng-pristine ng-empty ng-valid-subscriber-id-length ng-valid-valid-subscriber-id ng-invalid ng-invalid-required ng-touched' aaname='Member ID or SSN' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="060c7f8e-ad40-468d-a9b7-f1a0d0c6afe0" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="16e679ac-1811-4e17-9eef-65cc9eb3e2e8" CvTextArea="282, 377, 128, 14" CvTextArgument="Member ID or SSN *" CvType="Text" DesignTimeRectangle="161, 368, 264, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Member ID or SSN' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Member ID or SSN' /&gt;" Guid="de804400-c22d-423e-a9a3-ff3ec0a1a913" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1f9cbbd69bc68c9ac5297851d7bea6c0.png" xmlns="">0m452HA0bPky_mIfccCt-aw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

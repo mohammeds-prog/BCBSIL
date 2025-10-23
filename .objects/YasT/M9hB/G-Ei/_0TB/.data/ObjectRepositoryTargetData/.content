@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0lOC796mR0-elSNRw5TzhQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dnoaconnect.com" CVScreenId="c47ff0d4-2358-4c1e-8e23-51d41d60cb03" CvElementArea="394, 155, 143, 54" CvTextArea="400, 175, 132, 12" CvTextArgument="BENEFITS &amp; ELIGIBILITY" CvType="Button" DesignTimeRectangle="396, 157, 140, 50" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Benefits &amp;amp; Eligibility' tag='A' /&gt;" Guid="a804c4bd-280e-44d9-b72f-432ed1becb95" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c47ff0d4-2358-4c1e-8e23-51d41d60cb03" CvTextArea="32, 161, 143, 40" CvTextArgument="DNoAconneci)" CvType="Text" DesignTimeRectangle="33, 159, 200, 44" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="78ee8a39-0918-4b6b-a676-7eed10a284db" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="12d70b486e51c9b33fdcad405085ab0d.png" xmlns="">0lE6tO0xLQku7jKCjLBNO-g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

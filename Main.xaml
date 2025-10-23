@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="argument1" Type="InArgument(x:String)" />
+    <x:Property Name="dob" Type="InArgument(x:String)" />
+    <x:Property Name="member_id" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -74,6 +83,11 @@
       <x:String>UiPath.DocumentProcessing.Contracts</x:String>
       <x:String>UiPath.Activities.System.Text</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -150,10 +164,18 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1293,10062" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1293,12807" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="templatePath1" />
+      <Variable x:TypeArguments="x:String" Name="newFilePath" />
       <Variable x:TypeArguments="sd:DataTable" Name="infoTable" />
       <Variable x:TypeArguments="x:String" Name="downloadspath" />
       <Variable x:TypeArguments="x:String" Name="templatepath" />
@@ -199,13 +221,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome DNoA Connect" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,10039" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="09070c90-5955-4058-8dd3-9ded148c0689" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome DNoA Connect" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,12784" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="09070c90-5955-4058-8dd3-9ded148c0689" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="562,9798" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="562,12543" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +238,15 @@
                 <OutArgument x:TypeArguments="x:String">[templatePath]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, ".templates", "NEW FULL BOB TEMPLATE (1) - Copy.xlsx")]</InArgument>
+                <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, ".templates", "FULL BOB TEMPLATE.xlsx")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="528,115" sap2010:WorkflowViewState.IdRef="Assign_31">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[templatePath1]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, ".templates")]</InArgument>
               </Assign.Value>
             </Assign>
             <Assign sap:VirtualizedContainerService.HintSize="528,115" sap2010:WorkflowViewState.IdRef="Assign_24">
@@ -224,7 +254,7 @@
                 <OutArgument x:TypeArguments="x:String">[downloadspath]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "NEW FULL BOB TEMPLATE (1) - Copy.xlsx")]</InArgument>
+                <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "FULL BOB TEMPLATE.xlsx")]</InArgument>
               </Assign.Value>
             </Assign>
             <Assign sap:VirtualizedContainerService.HintSize="528,116" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -233,11 +263,100 @@
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="scg:List(x:String)" xml:space="preserve">[New List(Of String) From {
-"D0120", "D0140", "D0220", "D0274", "D0210", "D0367", "D1110", "D1208", "D1351", "D1352", "D2393","D2644","D2740", "D2950", "D2954", "D2920", "D2980", "D3120", "D3220", "D4211", "D4212", "D4249", "D4266", "D4341", "D4346", "D4355", "D4381", "D4910","D5410", "D5740", "D6010", "D6057", "D6058", "D6930", "D7140", "D7210", "D7220","D7880", "D7953", "D7961", "D7962", "D9110", "D9222", "D9230", "D9310", "D9944"
+"D0120", "D0140", "D0220", "D0274", "D0210", "D0367", "D1110", "D1208", "D1351", "D1352", "D1354", "D1355","D2393","D2644","D2740", "D2950", "D2954", "D2920", "D2980", "D3120", "D3220", "D4211", "D4212", "D4249", "D4266", "D4341", "D4346", "D4355", "D4381", "D4910","D5410", "D5740", "D6010", "D6057", "D6058", "D6930", "D7140", "D7210", "D7220","D7880", "D7953", "D7961", "D7962", "D9110", "D9222", "D9230", "D9310", "D9944"
 }]</InArgument>
               </Assign.Value>
             </Assign>
             <ui:BuildDataTable DataTable="[infoTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="528,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Procedure_x0020_Code&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Frequency_x0020_and_x0020_Percentage&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Member ID or SSN'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,288" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Text="[member_id]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="16e679ac-1811-4e17-9eef-65cc9eb3e2e8" ContentHash="j9dNDSvv4U2Od_z6f9ToDA" CvElementArea="437, 366, 402, 37" CvType="InputBox" DesignTimeRectangle="440, 368, 398, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='subscriberId' tag='INPUT' type='text' class='form-control ng-pristine ng-empty ng-valid-subscriber-id-length ng-valid-valid-subscriber-id ng-invalid ng-invalid-required ng-touched' aaname='Member ID or SSN' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="060c7f8e-ad40-468d-a9b7-f1a0d0c6afe0" InformativeScreenshot="1f9cbbd69bc68c9ac5297851d7bea6c0.png" IsResponsive="True" Reference="krLO0qrnME6dMk1yC2L_mw/_Of8TuUT9kWyf7Q0yYqPnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="16e679ac-1811-4e17-9eef-65cc9eb3e2e8" CvTextArea="282, 377, 128, 14" CvTextArgument="Member ID or SSN *" CvType="Text" DesignTimeRectangle="161, 368, 264, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Member ID or SSN' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Member ID or SSN' /&gt;" Guid="de804400-c22d-423e-a9a3-ff3ec0a1a913" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Date of Birth'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Text="[dob]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="92fdf472-8fea-4bee-b998-d5320adc63ca" ContentHash="SGfG9Up1UUy28L0Ik9H4Xw" CvElementArea="438, 416, 401, 36" CvType="InputBox" DesignTimeRectangle="440, 417, 398, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='dateOfBirth' tag='INPUT' type='text' class='form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-valid-date ng-valid-date-range' placeholder='mm/dd/yyyy' aaname='Date of Birth' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b41e4d1e-080c-4010-bb62-154c44dd32b9" InformativeScreenshot="f3af79a6c2c90ef6a990d441134b0b97.png" IsResponsive="True" Reference="krLO0qrnME6dMk1yC2L_mw/rjd9wG0uQUG_PELSpsVleg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="92fdf472-8fea-4bee-b998-d5320adc63ca" CvTextArea="319, 427, 91, 13" CvTextArgument="Date of Birth *" CvType="Text" DesignTimeRectangle="161, 417, 264, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date of Birth' tag='LABEL' type='' class='col-sm-4 control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Date of Birth' /&gt;" Guid="4d9436fe-06b2-4c01-8a90-5f7a0c51bae1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,227" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="fd6fd32d-791f-4ffc-b4e4-dde753470cd7" ContentHash="QAtqZd8WgEqE0bKL26iCEg" CvElementArea="821, 474, 117, 45" CvTextArea="851, 489, 56, 12" CvTextArgument="VALIDATE" CvType="Button" DesignTimeRectangle="823, 476, 114, 42" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="cf80b702-4c0a-4d3e-98eb-285e9e2401a9" InformativeScreenshot="c9eba8666f94ff2fe702b3487da01997.png" Reference="krLO0qrnME6dMk1yC2L_mw/DAFbjFCv40Gt1-y8iu5vdg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit(3)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,227" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="cca80e55-e53e-4c1f-86fa-119c401c0d4d" ContentHash="k04pRSpcKUOpo1x6hR-SBw" CvElementArea="1685, 687, 106, 43" CvTextArea="1714, 701, 46, 12" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="1686, 688, 104, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='               Submit              ' tag='BUTTON' type='submit' /&gt;" Guid="593cb9a0-e244-4ea5-9b41-0144ac86b9f7" InformativeScreenshot="017ef877d291e562ff68fe7327534d01.png" Reference="krLO0qrnME6dMk1yC2L_mw/WKfTKuWc_0CAbQMiZ-3zPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="528,383" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean" />
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
             <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="528,3278" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[codeList]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
@@ -523,46 +642,48 @@
 	{"D1208", "E10"},
 	{"D1351", "E12"},
 	{"D1352", "E14"},
-	{"D2393", "E16"},
-	{"D2644", "E17"},
-	{"D2740", "E18"},
-	{"D2950", "E20"},
-	{"D2954", "E21"},
-	{"D2920", "E22"},
-	{"D2980", "E23"},
-	{"D3120", "E24"},
-	{"D3220", "E25"},
-	{"D4211", "E26"},
-	{"D4212", "E27"},
-	{"D4249", "E28"},
-	{"D4266", "E29"},
-	{"D4341", "E30"},
-	{"D4346", "E33"},
-	{"D4355", "E34"},
-	{"D4381", "E35"},
-	{"D4910", "E36"},
-	{"D5410", "E40"},
-	{"D5740", "E41"},
-	{"D6010", "E42"},
-	{"D6057", "E43"},
-	{"D6058", "E44"},
-	{"D6930", "E45"},
-	{"D7140", "E46"},
-	{"D7210", "E47"},
-	{"D7220", "E48"},
-	{"D7880", "E50"},
-	{"D7953", "E51"},
-	{"D7961", "E52"},
-	{"D7962", "E53"},
-	{"D9110", "E54"},
-	{"D9222", "E55"},
-	{"D9230", "E56"},
-	{"D9310", "E57"},
-	{"D9944", "E58"}
+	{"D1354","E15"},
+	{"D1355","E16"},
+	{"D2393", "E18"},
+	{"D2644", "E19"},
+	{"D2740", "E20"},
+	{"D2950", "E22"},
+	{"D2954", "E23"},
+	{"D2920", "E24"},
+	{"D2980", "E25"},
+	{"D3120", "E26"},
+	{"D3220", "E27"},
+	{"D4211", "E28"},
+	{"D4212", "E29"},
+	{"D4249", "E30"},
+	{"D4266", "E31"},
+	{"D4341", "E32"},
+	{"D4346", "E35"},
+	{"D4355", "E36"},
+	{"D4381", "E37"},
+	{"D4910", "E38"},
+	{"D5410", "E42"},
+	{"D5740", "E43"},
+	{"D6010", "E44"},
+	{"D6057", "E45"},
+	{"D6058", "E46"},
+	{"D6930", "E47"},
+	{"D7140", "E48"},
+	{"D7210", "E49"},
+	{"D7220", "E50"},
+	{"D7880", "E52"},
+	{"D7953", "E53"},
+	{"D7961", "E54"},
+	{"D7962", "E55"},
+	{"D9110", "E56"},
+	{"D9222", "E57"},
+	{"D9230", "E58"},
+	{"D9310", "E59"},
+	{"D9944", "E60"}
 }]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_17" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[downloadspath]">
+                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_17" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[templatepath]">
                       <ui:ExcelApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                           <ActivityAction.Argument>
@@ -881,19 +1002,19 @@
   {"B7", "'" &amp; memberId},
   {"B12", "'" &amp; effectiveId},
   {"B20", famDed},
-  {"E19", "PRE-D RECOMMENDED"},
-  {"E49", "ONLY D7230, D7240 &amp; D7241 TO MEDICAL"},
-  {"E31", "YES"},
-  {"E32", "YES W/D4341"},
-  {"E37", "PRE-D RECOMMENDED"},
-  {"E38", "PRE-D RECOMMENDED"},
+  {"E21", "PRE-D RECOMMENDED"},
+  {"E51", "ONLY D7230, D7240 &amp; D7241 TO MEDICAL"},
+  {"E33", "YES"},
+  {"E34", "YES W/D4341"},
+  {"E39", "PRE-D RECOMMENDED"},
+  {"E40", "PRE-D RECOMMENDED"},
   {"B22", "DNOA"},
   {"B8", "BCBS of IL, 800-972-7565"},
   {"B9", "'PO Box 660247 Dallas, TX 75266-0247"}
 }]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each currentKeyValuePairOfTextAndText" sap:VirtualizedContainerService.HintSize="528,488" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[ExtraInfo]">
+            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each currentKeyValuePairOfTextAndText" sap:VirtualizedContainerService.HintSize="528,495" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[ExtraInfo]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                   <ActivityAction.Argument>
@@ -905,7 +1026,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_14" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[downloadspath]">
+                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_14" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[templatepath]">
                       <ui:ExcelApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                           <ActivityAction.Argument>
@@ -926,6 +1047,67 @@
                 </ActivityAction>
               </ui:ForEach.Body>
             </ui:ForEach>
+            <Assign sap:VirtualizedContainerService.HintSize="528,116" sap2010:WorkflowViewState.IdRef="Assign_30">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[newFilePath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.IO.Path.Combine(
+    System.IO.Path.GetDirectoryName(templatePath), 
+    "FULL_" + memberName + "_BCBSIL" + ".xlsx"
+)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:RenameFileX DisplayName="Rename File" FilePath="[templatePath]" sap:VirtualizedContainerService.HintSize="528,177" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True" NewName="[System.IO.Path.GetFileName(newFilePath)]" />
+            <ugad:GoogleDriveApplicationScope ContinueOnError="{x:Null}" Account="mohammeds@tusksupportpartners.com" ConnectionAccountName="mohammeds@tusksupportpartners.com #2" ConnectionId="ba0aaa90-88ea-4266-bf17-b3d49afb2900" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="528,509" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" Timeout="1000" UseConnectionService="True" UserEmail="mohammeds@tusksupportpartners.com">
+              <ugad:GoogleDriveApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,334" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uga:UploadFile ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" Convert="False" DisplayName="Upload File" DriveTarget="[GoogleDrive]" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="UploadFile_1" LocalFilePath="[newFilePath]" ParentFolderName="templates" ParentId="https://drive.google.com/drive/folders/17_n8O36FWQsOd-iGzCnwC6tNU2Iq6gDP?usp=drive_link" ParentIdSelectionMode="Browse" SupportsTeamDrives="False" UpdateExisting="False" />
+                  </Sequence>
+                </ActivityAction>
+              </ugad:GoogleDriveApplicationScope.Body>
+              <ugad:GoogleDriveApplicationScope.CredentialID>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ugad:GoogleDriveApplicationScope.CredentialID>
+              <ugad:GoogleDriveApplicationScope.CredentialSecret>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ugad:GoogleDriveApplicationScope.CredentialSecret>
+            </ugad:GoogleDriveApplicationScope>
+            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[templatePath1]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="528,188" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[downloadspath]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Benefits &amp; Eligibility'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="528,220" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="09070c90-5955-4058-8dd3-9ded148c0689" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="dnoaconnect.com" CVScreenId="c47ff0d4-2358-4c1e-8e23-51d41d60cb03" ContentHash="0lOC796mR0-elSNRw5TzhQ" CvElementArea="394, 155, 143, 54" CvTextArea="400, 175, 132, 12" CvTextArgument="BENEFITS &amp; ELIGIBILITY" CvType="Button" DesignTimeRectangle="396, 157, 140, 50" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Benefits &amp;amp; Eligibility' tag='A' /&gt;" Guid="a804c4bd-280e-44d9-b72f-432ed1becb95" InformativeScreenshot="12d70b486e51c9b33fdcad405085ab0d.png" Reference="krLO0qrnME6dMk1yC2L_mw/_0TBood2o0eqPi1pBvOaow" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DNoA Connect' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c47ff0d4-2358-4c1e-8e23-51d41d60cb03" CvTextArea="32, 161, 143, 40" CvTextArgument="DNoAconneci)" CvType="Text" DesignTimeRectangle="33, 159, 200, 44" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="78ee8a39-0918-4b6b-a676-7eed10a284db" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
